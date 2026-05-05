@@ -1,0 +1,160 @@
+{
+  "titulo": "Caio — Sem Saída?",
+  "subtitulo": "Uma história interativa da Baixada Santista",
+  "versao": "1.0.0",
+  "cenas": [
+    {
+      "id": "inicio",
+      "location": "CUBATÃO — COMUNIDADE DO SÍTIO",
+      "mood": "dark",
+      "moodLabel": "◆ NOITE PESADA",
+      "bgType": "night_rain",
+      "texto": "A chuva cai em pixels finos sobre os telhados de zinco da comunidade do Sítio. Paredes de compensado marrom-escuro, fios pendurados entre postes tortos, chão de terra virada em lama cor de ferrugem. Caio tem 15 anos. Dorme sobre uma esteira velha no canto de um barraco de três cômodos que cheira a mofo, cigarro e algo que ele não consegue mais nomear.",
+      "opcoes": [],
+      "next": "familia"
+    },
+    {
+      "id": "familia",
+      "location": "DENTRO DO BARRACO — MADRUGADA",
+      "mood": "dark",
+      "moodLabel": "◆ ABANDONO",
+      "bgType": "inside_dark",
+      "texto": "Seu pai, Edson, está sentado no chão encostado na parede, os olhos em branco. Sua mãe, Cida, saiu faz três dias e não voltou. Na geladeira quebrada há meio pacote de bolacha água e sal e uma garrafa de água. Caio olha para o teto que vaza e conta mentalmente: dois dias sem arroz. Quatro sem carne. Ele não tem chorado mais. As lágrimas secaram em algum lugar do ano passado.",
+      "opcoes": [],
+      "next": "escola"
+    },
+    {
+      "id": "escola",
+      "location": "RUA PRINCIPAL — MANHÃ CINZA",
+      "mood": "tense",
+      "moodLabel": "◆ TENSÃO",
+      "bgType": "street_gray",
+      "texto": "De manhã, Caio coloca a mochila com o único caderno que sobrou e caminha até a escola. A rua tem um cachorro morto perto da valeta. Crianças menores brincam em volta de um cano de água estourado. O pixel art do mundo ao redor parece desbotado — cinza esverdeado, marrom podre, amarelo queimado de sol. Quando chega na escola, descobre que está atrasado na matrícula. A secretária diz: 'Você precisa de um responsável para assinar.'",
+      "opcoes": [],
+      "next": "primeira_escolha"
+    },
+    {
+      "id": "primeira_escolha",
+      "location": "PORTÃO DA ESCOLA — INÍCIO DA MANHÃ",
+      "mood": "tense",
+      "moodLabel": "◆ PRIMEIRO DILEMA",
+      "bgType": "school_gate",
+      "texto": "Caio fica parado no portão da escola por vinte minutos. Sabe que não vai conseguir a assinatura do pai. Sabe que a mãe sumiu. A fome aperta o estômago como uma mão fechada. Do outro lado da rua, Biel — 17 anos, corrente dourada no pescoço — acena para ele com um sorriso largo. 'Vem cá, mano. Tenho um bico pra você hoje. Cinquenta reais, rápido.' Caio olha para dentro da escola e depois para Biel.",
+      "opcoes": [
+        { "texto": "Ir com Biel para ganhar dinheiro rápido", "proximo": "caminho_biel" },
+        { "texto": "Tentar resolver a matrícula de outro jeito", "proximo": "caminho_escola" }
+      ]
+    },
+    {
+      "id": "caminho_biel",
+      "location": "BECO DOS FUNDOS — DIA",
+      "mood": "tense",
+      "moodLabel": "◆ PERIGO",
+      "bgType": "alley",
+      "texto": "O 'bico' é simples, Biel explica: ficar no canto de um beco e avisar quando algum carro desconhecido entrar na rua. 'Só olhar, Caio. Cinquenta reais por isso.' No bolso do casaco de Biel, Caio enxerga o cabo de algo que não quer nomear. Ele fica duas horas no canto. Ninguém aparece. Depois disso, Biel dá trinta reais. 'Faltou o resto.' — 'Semana que vem, irmão.' Com o dinheiro, Caio compra arroz, feijão e um refrigerante. Come até a barriga doer.",
+      "opcoes": [],
+      "next": "segunda_escolha_biel"
+    },
+    {
+      "id": "segunda_escolha_biel",
+      "location": "COMUNIDADE — DIAS DEPOIS",
+      "mood": "tense",
+      "moodLabel": "◆ ENCRUZILHADA",
+      "bgType": "community_dusk",
+      "texto": "Biel aparece de novo na semana seguinte. E na próxima. Caio vai três vezes ao beco. No quarto chamado, Biel diz que o serviço mudou: precisa levar um embrulho até um endereço. 'Só entregar. Cem reais.' Caio segura o embrulho nas mãos. Sente que é pesado demais pra ser só papel. A rua ao redor está pixelada em laranjas e sombras longas de entardecer. Ele pensa no arroz que tem em casa. E pensa também na viatura que viu passando ontem.",
+      "opcoes": [
+        { "texto": "Entregar o embrulho e pegar os cem reais", "proximo": "final_negativo" },
+        { "texto": "Devolver o embrulho e se afastar de Biel", "proximo": "virada" }
+      ]
+    },
+    {
+      "id": "caminho_escola",
+      "location": "ESCOLA — SALA DA DIRETORA",
+      "mood": "hope",
+      "moodLabel": "◆ RESISTÊNCIA",
+      "bgType": "school_inside",
+      "texto": "Caio entra e procura a diretora. Conta tudo. Faz isso olhando para o chão. A voz treme. A diretora, Dona Tereza, ouve calada. Depois faz três telefonemas. O Conselho Tutelar pode vir, mas vai levar dias. Por enquanto, ela mesma assina como responsável provisória. Caio pega a carteirinha nova. Sente uma coisa estranha — algo que não sentiu em muito tempo. Não é felicidade. É só a ausência da vergonha, por uma hora.",
+      "opcoes": [],
+      "next": "segunda_escolha_escola"
+    },
+    {
+      "id": "segunda_escolha_escola",
+      "location": "QUADRA DA ESCOLA — INTERVALO",
+      "mood": "tense",
+      "moodLabel": "◆ NOVA ESCOLHA",
+      "bgType": "schoolyard",
+      "texto": "No intervalo, um professor de matemática, Seu Hélio, chama Caio: 'Você faltou muito no ano passado. Mas seu desempenho foi bom no SPAECE. Tem uma bolsa de reforço em São Vicente, duas vezes por semana. Eles pagam passagem e lanche.' Caio calcula: duas conduções por semana. A fome não vai sumir. Mas tem algo puxando de lá. Porém Biel está esperando do lado de fora do portão, acenando de novo.",
+      "opcoes": [
+        { "texto": "Pegar a bolsa de reforço em São Vicente", "proximo": "caminho_sao_vicente" },
+        { "texto": "Sair com Biel — a fome é mais urgente", "proximo": "segunda_escolha_biel" }
+      ]
+    },
+    {
+      "id": "virada",
+      "location": "COMUNIDADE — NOITE DE CHUVA",
+      "mood": "hope",
+      "moodLabel": "◆ RECUSA",
+      "bgType": "night_rain",
+      "texto": "Caio devolve o embrulho. Biel fica furioso, fala palavrão, joga a mão no ombro dele. Caio caminha sem correr, com o coração disparado. Chega em casa. Senta no chão. Fica olhando para a parede por uma hora. Depois lembra de um papel que a professora deu semanas atrás — um projeto de jovens aprendizes num armazém no Porto de Santos. Ele tinha jogado na mochila e esquecido. Tira o papel amassado.",
+      "opcoes": [
+        { "texto": "Ir até o projeto Jovem Aprendiz no Porto", "proximo": "caminho_sao_vicente" },
+        { "texto": "Desistir — é longe demais, não tem passagem", "proximo": "final_neutro" }
+      ]
+    },
+    {
+      "id": "caminho_sao_vicente",
+      "location": "SÃO VICENTE — CENTRO DE FORMAÇÃO",
+      "mood": "hope",
+      "moodLabel": "◆ NOVA TERRA",
+      "bgType": "city_day",
+      "texto": "O ônibus passa por Santos. Pelo vidro embaçado, Caio vê o oceano pela primeira vez com olhos limpos — não como fuga, mas como perspectiva. O centro de formação é uma sala com doze jovens. Cheira a café e isopor de marmita. Caio não conhece ninguém. Fica quieto durante a primeira semana. Mas aprende. Planilhas. Comunicação. Como mandar um e-mail. Coisas que parecem pequenas, mas ele sente que estão construindo chão embaixo dos pés.",
+      "opcoes": [],
+      "next": "terceira_escolha"
+    },
+    {
+      "id": "terceira_escolha",
+      "location": "SÃO VICENTE — MÊS TRÊS",
+      "mood": "hope",
+      "moodLabel": "◆ MOMENTO DECISIVO",
+      "bgType": "city_day",
+      "texto": "No terceiro mês, a coordenadora do programa, Fátima, chama Caio. Tem uma vaga de auxiliar administrativo no porto. Salário de aprendiz — baixo, mas real. Porém ela também diz: 'Apareceu uma outra oportunidade. Uma escola técnica estadual em Santos. Vagas para jovens em vulnerabilidade. Período integral, com bolsa-permanência.' Caio olha para as duas portas. Trabalhar agora. Ou estudar mais e chegar mais longe depois. Em casa, o pai ainda está mal. A mãe voltou, mas fraca.",
+      "opcoes": [
+        { "texto": "Aceitar o emprego de auxiliar — precisa do salário agora", "proximo": "final_neutro" },
+        { "texto": "Entrar na escola técnica — apostar no futuro", "proximo": "final_positivo" }
+      ]
+    },
+    {
+      "id": "final_negativo",
+      "location": "DELEGACIA — TRÊS MESES DEPOIS",
+      "mood": "end_bad",
+      "moodLabel": "◆ FIM: TRAGÉDIA",
+      "bgType": "police",
+      "texto": "A abordagem aconteceu na esquina. Caio estava com o embrulho. A viatura chegou de surpresa. Biel sumiu. Caio ficou. Na delegacia, sob luz fluorescente pixelada em branco frio, ele deu seu nome e endereço pela primeira vez para um policial. Tinha dezesseis anos quando entrou. Dezesseis quando saiu, meses depois, com a ficha marcada. A comunidade ainda está lá. A fome ainda está lá. Mas agora tem mais uma parede entre ele e qualquer porta.\n\n[As escolhas que parecem rápidas às vezes fecham caminhos que levam anos para reabrir.]",
+      "opcoes": [],
+      "isEnd": true,
+      "endType": "bad"
+    },
+    {
+      "id": "final_neutro",
+      "location": "PORTO DE SANTOS — UM ANO DEPOIS",
+      "mood": "end_neutral",
+      "moodLabel": "◆ FIM: SOBREVIVÊNCIA",
+      "bgType": "port_gray",
+      "texto": "Caio trabalha. Acorda às cinco e meia, pega dois ônibus, chega no armazém às sete. Carrega, organiza, registra. O salário entra no quinto dia útil. Ele paga o gás, compra arroz, manda a mãe pra consulta. É pouco. Mas é honesto. Não tem tempo para estudar. Não tem energia para mais nada. Aos dezessete, Caio tem uma rotina de adulto cansado. Não caiu. Mas também ainda não subiu. Por enquanto, está de pé — e às vezes isso é tudo que existe.\n\n[Sobreviver já é resistência. Mas o caminho continua aberto.]",
+      "opcoes": [],
+      "isEnd": true,
+      "endType": "neutral"
+    },
+    {
+      "id": "final_positivo",
+      "location": "SANTOS — ESCOLA TÉCNICA ESTADUAL",
+      "mood": "end_good",
+      "moodLabel": "◆ FIM: SUPERAÇÃO",
+      "bgType": "sunrise",
+      "texto": "A escola técnica tem carteiras de plástico e professores cansados — mas também tem laboratório de informática e uma professora de português que lê os textos de Caio em voz alta para a turma. Ele aprende contabilidade, lógica, redação técnica. No segundo ano, ganha menção honrosa numa feira de projetos locais. A bolsa-permanência cobre o ônibus e o lanche. A mãe está em tratamento. O pai ainda luta. A casa ainda é pequena. Mas Caio de dezessete anos sabe coisas que o Caio de quinze não conseguia imaginar: que existe um caminho, mesmo que estreito, mesmo que íngreme. E ele está nele.\n\n[A superação raramente é um salto. É um passo por dia, em chão irregular.]",
+      "opcoes": [],
+      "isEnd": true,
+      "endType": "good"
+    }
+  ]
+}

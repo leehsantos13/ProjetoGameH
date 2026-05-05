@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caio — Sem Saída? | História Interativa da Baixada Santista</title>
+  <meta name="description" content="Uma história interativa em pixel art sobre escolhas, pobreza e superação na Baixada Santista." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <div class="game-wrap" id="gameWrap">
+
+    <div class="pixel-header">
+      <svg class="header-icon" width="28" height="28" viewBox="0 0 14 14" aria-hidden="true">
+        <rect x="5" y="0" width="4" height="2" fill="#c8a060"/>
+        <rect x="4" y="2" width="6" height="4" fill="#c8a060"/>
+        <rect x="3" y="4" width="8" height="2" fill="#b89050"/>
+        <rect x="2" y="6" width="10" height="6" fill="#4a3a28"/>
+        <rect x="4" y="8" width="2" height="4" fill="#1a0e06"/>
+        <rect x="8" y="8" width="2" height="4" fill="#1a0e06"/>
+        <rect x="1" y="10" width="12" height="2" fill="#3a2a18"/>
+      </svg>
+      <div>
+        <div class="game-title">CAIO — SEM SAÍDA?</div>
+        <div class="game-subtitle">Uma história da Baixada Santista</div>
+      </div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill" style="width:5%"></div>
+    </div>
+    <div class="scene-counter" id="sceneCounter">cena 1</div>
+
+    <div class="pixel-art-bg" id="pixelBg">
+      <canvas id="bgCanvas"></canvas>
+    </div>
+
+    <div class="scene-panel">
+      <div class="scene-location" id="sceneLocation">CUBATÃO — COMUNIDADE DO SÍTIO</div>
+      <div id="sceneMood" class="scene-mood mood-dark">◆ NOITE PESADA</div>
+      <div class="scene-text" id="sceneText">Carregando...</div>
+    </div>
+
+    <div class="choices-area" id="choicesArea"></div>
+
+  </div>
+
+  <script src="src/story.js"></script>
+  <script src="src/renderer.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>

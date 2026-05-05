@@ -1,0 +1,23 @@
+{
+  "name": "projetogameh",
+  "version": "1.0.0",
+  "description": "> *\"A superação raramente é um salto. É um passo por dia, em chão irregular.\"*",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
