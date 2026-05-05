@@ -31,7 +31,6 @@
 
   // ── Refs de DOM ────────────────────────────────────────────────
   const progressFill  = document.getElementById('progressFill');
-  const sceneCounter  = document.getElementById('sceneCounter');
   const sceneLocation = document.getElementById('sceneLocation');
   const sceneMood     = document.getElementById('sceneMood');
   const sceneText     = document.getElementById('sceneText');
@@ -79,7 +78,6 @@
     visitedCount++;
     const pct = Math.min(95, Math.round((visitedCount / TOTAL_SCENES) * 100));
     progressFill.style.width = pct + '%';
-    sceneCounter.textContent = 'cena ' + visitedCount;
   }
 
   /**

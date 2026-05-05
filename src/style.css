@@ -75,11 +75,7 @@ html, body {
 
 /* ── Contador de cena ── */
 .scene-counter {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 6px;
-  color: #2a2a4a;
-  text-align: right;
-  padding: 4px 20px 0;
+  display: none;
 }
 
 /* ── Canvas de fundo pixel art ── */
