@@ -7,7 +7,7 @@
 
 ## Sobre o projeto
 
-**Caio — Sem Saída?** é um jogo de narrativa interativa (visual novel) desenvolvido como HTML puro, sem dependências de framework. A história acompanha Caio, um jovem de 15 anos que vive em extrema vulnerabilidade social na região da Baixada Santista — com pais dependentes químicos, fome real e ausência de oportunidades.
+**Caio — Sem Saída?** é um jogo de narrativa interativa (visual novel) desenvolvido com HTML, CSS e JavaScript, configurado para Node.js e deploy no Vercel. A história acompanha Caio, um jovem de 15 anos que vive em extrema vulnerabilidade social na região da Baixada Santista — com pais dependentes químicos, fome real e ausência de oportunidades.
 
 O objetivo do jogo é mostrar, com respeito e honestidade, os dilemas reais enfrentados por jovens nessa situação: as pressões do ambiente, as escolhas impossíveis entre sobreviver agora e construir um futuro, e os diferentes caminhos que essas escolhas abrem ou fecham.
 
@@ -26,7 +26,7 @@ O objetivo do jogo é mostrar, com respeito e honestidade, os dilemas reais enfr
 - Fundo gerado proceduralmente em Canvas 2D (pixel art dinâmico)
 - Barra de progresso e contador de cenas
 - 100% responsivo — funciona em mobile e desktop
-- Zero dependências externas (apenas Google Fonts)
+- Servido via Node.js com Express para deploy no Vercel
 
 ---
 
@@ -36,6 +36,8 @@ O objetivo do jogo é mostrar, com respeito e honestidade, os dilemas reais enfr
 caio-sem-saida/
 │
 ├── index.html          # Entrada principal do jogo
+├── server.js           # Servidor Node.js com Express
+├── package.json        # Configuração do Node.js
 │
 ├── src/
 │   ├── style.css       # Estilos completos (tema pixel art escuro)
@@ -54,34 +56,25 @@ caio-sem-saida/
 
 ## Como rodar
 
-### Opção 1 — Abrir direto no navegador
+### Localmente
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/caio-sem-saida.git
-cd caio-sem-saida
+git clone https://github.com/leehsantos13/ProjetoGameH.git
+cd ProjetoGameH
 
-# Abra o index.html no navegador
-open index.html        # macOS
-xdg-open index.html    # Linux
-start index.html       # Windows
+# Instale as dependências
+npm install
+
+# Rode o servidor
+npm start
+
+# Acesse: http://localhost:3000
 ```
 
-### Opção 2 — Servidor local (recomendado)
-```bash
-# Com Python
-python3 -m http.server 8080
+### Deploy no Vercel
+O projeto está configurado para deploy automático no Vercel. Conecte este repositório no Vercel e ele será implantado automaticamente.
 
-# Com Node.js (npx)
-npx serve .
-
-# Acesse: http://localhost:8080
-```
-
-### Opção 3 — GitHub Pages
-Ative o GitHub Pages no repositório apontando para a branch `main` / pasta raiz. O jogo estará acessível em:
-```
-https://seu-usuario.github.io/caio-sem-saida/
-```
+**URL do Deploy:** [Adicione a URL após o deploy]
 
 ---
 
@@ -118,6 +111,8 @@ https://seu-usuario.github.io/caio-sem-saida/
 | JavaScript (ES5+) | Engine, renderizador canvas, fluxo narrativo |
 | Canvas 2D API | Geração procedural dos cenários |
 | Google Fonts | VT323 + Press Start 2P (pixel fonts) |
+| Node.js | Servidor para deploy |
+| Express | Framework para servir arquivos estáticos |
 
 ---
 
@@ -170,3 +165,7 @@ MIT — livre para usar, modificar e distribuir com atribuição.
 ---
 
 *Desenvolvido com VT323, Press Start 2P e muita empatia.*
+=======
+# ProjetoGameH
+Historia de Caio
+>>>>>>> 7b7b62aa2c63d724ca5254a124bf7be5b4c21bd5
