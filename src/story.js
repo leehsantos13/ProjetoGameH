@@ -28,7 +28,7 @@ const STORY = {
     mood: "dark",
     moodLabel: "◆ NOITE PESADA",
     bgType: "night_rain",
-    texto: "A chuva cai em pixels finos sobre os telhados de zinco da comunidade do Sítio. Paredes de compensado marrom-escuro, fios pendurados entre postes tortos, chão de terra virada em lama cor de ferrugem. Caio tem 15 anos. Dorme sobre uma esteira velha no canto de um barraco de três cômodos que cheira a mofo, cigarro e algo que ele não consegue mais nomear.",
+    texto: "A chuva cai em pingos finos sobre os telhados da comunidade do Sítio. Paredes de compensado marrom-escuro, fios pendurados entre postes tortos, chão de terra virada em lama cor de ferrugem. Caio tem 15 anos. Dorme sobre uma esteira velha no canto de um barraco de três cômodos que cheira a mofo, cigarro e algo que ele não consegue mais nomear.",
     opcoes: [],
     next: "familia"
   },
